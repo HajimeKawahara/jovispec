@@ -1,0 +1,4 @@
+Name: BMC
+Files: detect_peaks.py
+TakenFrom: http://nbviewer.jupyter.org/github/demotu/BMC/blob/master/notebooks/DetectPeaks.ipynb
+License: MIT
