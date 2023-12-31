@@ -24,3 +24,6 @@ See notebooks in ipynb.
 <img src="https://github.com/HajimeKawahara/jovispec/assets/15956904/87f10019-dc39-43c5-bca2-f538496e28c2" Titie="jovispec" Width=500px> <img src="https://github.com/HajimeKawahara/jovispec/assets/15956904/52db67d9-6b0b-48c1-b14c-f957b5b1bb7b" Titie="jovispec" Width=500px>
 
 x-axis = angstrom, setting = NIRc
+
+
+<img src="https://github.com/HajimeKawahara/jovispec/assets/15956904/ee19fb37-60f7-49b1-8b6f-5442207d0b74" Titie="jovispec" Width=1200px>
