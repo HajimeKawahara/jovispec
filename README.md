@@ -27,3 +27,21 @@ x-axis = angstrom, setting = NIRc
 
 
 <img src="https://github.com/HajimeKawahara/jovispec/assets/15956904/ee19fb37-60f7-49b1-8b6f-5442207d0b74" Titie="jovispec" Width=1200px>
+
+
+## Data Infomation
+
+- ObsID 14199
+- Date 2014-10-20 (UT)
+- NIRc, IS#2 (0.45"x3), 2x1bin 
+
+### Objects
+
+- 60000-08 WASP33 (A-type star)
+- 60030/31 HD13041
+- 60032/33 - 36/37 JUPITER CENTER
+- 60038/39, 40/41 JUPITER NORTH
+- 60042/43, 44/45 JUPITER SOUTH
+- 60048/47 JUPITER WEST
+- 60050/49 JUPITER EAST
+
