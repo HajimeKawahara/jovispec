@@ -26,6 +26,12 @@ median_image = dark.immedian()
 im_subbias = bias_subtract_image(median_image)
 hotpix_mask = identify_hotpix_sigclip(im_subbias)
 
+# gam masking
+gap_mask = np.zeros(median_image.shape,dtype=bool)
+gap_mask[63::128,:] = True
+gap_mask[64::128,:] = True
+hotpix_mask = hotpix_mask | gap_mask
+
 # generates the normalized flat
 flat.trace = trace_mmf
 flat.clean_pattern(trace_mask=trace_mask,extin='', extout='_cp', hotpix_mask=hotpix_mask)
