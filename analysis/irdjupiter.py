@@ -43,7 +43,7 @@ df_flatn = flat.apnormalize()
 thar=irdstream.Stream2D("thar",datadir,anadir,rawtag="2017011",fitsid=[8143952, 8144142, 8144237, 8144415],rotate=True, inverse=True)
 thar.trace = trace_mmf
 thar.clean_pattern(trace_mask=trace_mask,extin='', extout='_cp', hotpix_mask=hotpix_mask)
-thar.calibrate_wavelength()
+thar.calibrate_wavelength(maxiter=5)
 
 # target reduction
 target = irdstream.Stream2D("target", datadir, anadir, rawtag="2017011", fitsid=[8034325], rotate=True, inverse=True)
