@@ -12,7 +12,7 @@ def read_irddat(datfile):
     datfile: dat file name (e.g. data/H/reduc/nw8034325_mmf12.dat)
 
     Returns:
-        ndarray real, real, int : wavelength (uncalibrated), spectrum, order
+        ndarray real, real, int : wavelength (uncalibrated, angstrom), spectrum, order
     """
 
     dat = pd.read_csv(
@@ -20,7 +20,7 @@ def read_irddat(datfile):
         delimiter="\s",
         names=("wav", "order", "err", "spec", "a"),
     )
-    wav = np.array(dat["wav"])
+    wav = np.array(dat["wav"])*10 #AA
     spec = np.array(dat["spec"])
     order = np.array(dat["order"], dtype=int)
 
