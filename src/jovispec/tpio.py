@@ -14,9 +14,21 @@ def read_tpprofile_jupiter(tpfile=None):
         path = pkg_resources.resource_filename("jovispec", "jupiter_data/")
         tpfile = path + "jupiter_atm.txt"
 
-    dat = pd.read_csv(tpfile, delimiter=",", names=("Temperature (K)", "Pressure (bar)"))
+    dat = pd.read_csv(tpfile, delimiter=",")
     return dat
 
 if __name__ == "__main__":
 #    dat = read_tpprofile_jupiter("jupiter_data/jupiter_atm.txt")
     dat = read_tpprofile_jupiter()
+    temperatures = dat["Temperature (K)"]
+    pressures = dat["Pressure (bar)"]
+    print(temperatures)
+    import matplotlib.pyplot as plt
+    plt.plot(temperatures,pressures)
+    #plt.plot(temperature_low,pressure_low)
+    #plt.plot(temperature_up,pressure_up)
+    plt.gca().invert_yaxis()
+    plt.yscale("log")
+    plt.ylabel("Pressure (bar)")
+    plt.xlabel("Temperature (K)")
+    plt.show()
