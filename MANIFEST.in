@@ -1,3 +1,4 @@
+include src/jovispec/jupiter_data/jupiter_atm.txt
 include src/jovispec/jupiter_data/p06000.fits
 include src/jovispec/jupiter_data/p06002.fits
 include src/jovispec/jupiter_data/p06004.fits
