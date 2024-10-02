@@ -24,7 +24,7 @@ from pyird.image.hotpix import identify_hotpix_sigclip
 dark = irdstream.Stream2D("dark", datadir, anadir, rawtag="2017011", fitsid=[8133836], rotate=True, inverse=True)
 median_image = dark.immedian()
 im_subbias = bias_subtract_image(median_image)
-hotpix_mask = identify_hotpix_sigclip(im_subbias)
+hotpix_mask = identify_hotpix_sigclip(im_subbias, sigma=5, maxiters=1)
 
 # gam masking
 gap_mask = np.zeros(median_image.shape,dtype=bool)
